@@ -9,7 +9,7 @@ import { PORTFOLIO_DATA } from './constants';
 import { ArrowUp } from 'lucide-react';
 
 const App: React.FC = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [darkMode, setDarkMode] = useState<boolean>(true);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
@@ -35,13 +35,13 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col font-sans relative overflow-x-hidden">
       {/* Decorative Background Blobs - Playful & Colorful */}
-      <div className="fixed top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-[600px] h-[600px] bg-yellow-400/40 dark:bg-yellow-500/10 rounded-full blur-[120px] -z-10 animate-blob mix-blend-multiply dark:mix-blend-screen"></div>
-      
-      <div className="fixed top-1/4 right-0 translate-x-1/4 w-[500px] h-[500px] bg-cyan-400/40 dark:bg-cyan-500/10 rounded-full blur-[120px] -z-10 animate-blob animation-delay-2000 mix-blend-multiply dark:mix-blend-screen"></div>
-      
-      <div className="fixed bottom-0 left-20 translate-y-1/4 w-[550px] h-[550px] bg-rose-400/40 dark:bg-rose-500/10 rounded-full blur-[120px] -z-10 animate-blob animation-delay-4000 mix-blend-multiply dark:mix-blend-screen"></div>
-      
-      <div className="fixed bottom-1/3 right-1/4 w-[400px] h-[400px] bg-lime-400/40 dark:bg-lime-500/10 rounded-full blur-[100px] -z-10 animate-blob animation-delay-3000 mix-blend-multiply dark:mix-blend-screen"></div>
+      <div className="fixed top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-[600px] h-[600px] bg-slate-200/40 dark:bg-yellow-500/10 rounded-full blur-[120px] -z-10 animate-blob mix-blend-multiply dark:mix-blend-screen"></div>
+
+      <div className="fixed top-1/4 right-0 translate-x-1/4 w-[500px] h-[500px] bg-gray-200/40 dark:bg-cyan-500/10 rounded-full blur-[120px] -z-10 animate-blob animation-delay-2000 mix-blend-multiply dark:mix-blend-screen"></div>
+
+      <div className="fixed bottom-0 left-20 translate-y-1/4 w-[550px] h-[550px] bg-slate-100/40 dark:bg-rose-500/10 rounded-full blur-[120px] -z-10 animate-blob animation-delay-4000 mix-blend-multiply dark:mix-blend-screen"></div>
+
+      <div className="fixed bottom-1/3 right-1/4 w-[400px] h-[400px] bg-gray-100/40 dark:bg-lime-500/10 rounded-full blur-[100px] -z-10 animate-blob animation-delay-3000 mix-blend-multiply dark:mix-blend-screen"></div>
 
       <Header darkMode={darkMode} setDarkMode={setDarkMode} name={PORTFOLIO_DATA.name} />
       
