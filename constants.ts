@@ -7,7 +7,9 @@ export const PORTFOLIO_DATA: PortfolioData = {
   contact: {
     phone: "+31 6 14549020",
     email: "sharokh.aria@gmail.com",
-    location: "Zoetermeer, The Netherlands"
+    location: "Zoetermeer, The Netherlands",
+    linkedin: "https://www.linkedin.com/in/sharokh-aria-b09318133/",
+    github: "https://github.com/shawoozy"
   },
   skills: [
     {
@@ -25,6 +27,10 @@ export const PORTFOLIO_DATA: PortfolioData = {
     {
       category: "Databases & Data",
       items: ["MySQL", "Redis", "RabbitMQ", "RoomDB", "CosmosDB"]
+    },
+    {
+      category: "AI & Tooling",
+      items: ["Claude Code", "Kiro", "Cursor", "n8n", "MCP", "Custom Agents", "Skills"]
     },
     {
       category: "Methodologies",

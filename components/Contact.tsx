@@ -47,10 +47,10 @@ const Contact: React.FC<ContactProps> = ({ contact }) => {
           </div>
 
           <div className="flex justify-center space-x-8 text-slate-400">
-             <a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-all hover:scale-125 hover:-rotate-6">
+             <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-all hover:scale-125 hover:-rotate-6">
                <Linkedin size={32} />
              </a>
-             <a href="#" className="hover:text-slate-900 dark:hover:text-white transition-all hover:scale-125 hover:rotate-6">
+             <a href={contact.github} target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 dark:hover:text-white transition-all hover:scale-125 hover:rotate-6">
                <Github size={32} />
              </a>
           </div>

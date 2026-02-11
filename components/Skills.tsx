@@ -12,6 +12,7 @@ const getIconForCategory = (category: string) => {
   if (lower.includes('frontend')) return <Globe size={24} />;
   if (lower.includes('infrastructure')) return <Server size={24} />;
   if (lower.includes('data')) return <Database size={24} />;
+  if (lower.includes('ai')) return <Cpu size={24} />;
   return <Cpu size={24} />;
 };
 

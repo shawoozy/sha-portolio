@@ -3,6 +3,7 @@ export interface ContactInfo {
   email: string;
   location: string;
   linkedin?: string;
+  github?: string;
 }
 
 export interface Skill {
